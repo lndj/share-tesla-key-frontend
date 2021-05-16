@@ -22,17 +22,18 @@
       </div>
       <v-spacer></v-spacer>
     </v-app-bar>
+    
     <v-main>
-      <!-- <HelloWorld /> -->
-      <login-form />
-      <Footer />
+      <router-view/>
     </v-main>
+
+    <Footer />
   </v-app>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld";
-import LoginForm from "./components/LoginForm";
+// import LoginForm from "./components/LoginForm";
 import Footer from "./components/Footer";
 
 export default {
@@ -40,7 +41,7 @@ export default {
 
   components: {
     // HelloWorld,
-    LoginForm,
+    // LoginForm,
     Footer
   },
 

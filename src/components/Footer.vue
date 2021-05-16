@@ -32,7 +32,7 @@
     data: () => ({
       links: [
         'Blog',
-        'Contact Us',
+        'Github',
       ],
     }),
   }
