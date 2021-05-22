@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar flat>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -21,6 +21,12 @@
         />
       </div>
       <v-spacer></v-spacer>
+      <v-switch
+        v-model="$vuetify.theme.dark"
+        inset
+        label="Dark Mode"
+        persistent-hint
+      ></v-switch>
     </v-app-bar>
     
     <v-main>
