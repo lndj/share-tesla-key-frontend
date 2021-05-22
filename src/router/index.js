@@ -9,6 +9,11 @@ export default new Router({
   mode: 'history',
   routes: [
     {
+      path: '/',
+      name: 'Index',
+      component: HelloWorld
+    },
+    {
       path: '/create',
       name: 'LoginForm',
       component: LoginForm
@@ -16,6 +21,11 @@ export default new Router({
     {
       path: '/key/:code',
       name: 'HelloWorld',
+      component: HelloWorld
+    },
+    {
+      path: '*',
+      name: '404',
       component: HelloWorld
     }
   ]
