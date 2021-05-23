@@ -9,13 +9,15 @@
     >
       <v-btn
         v-for="link in links"
-        :key="link"
+        :key="link.name"
         color="white"
         text
         rounded
         class="my-2"
+        :href="link.link"
+        target="_blank"
       >
-        {{ link }}
+        {{ link.name }}
       </v-btn>
       <v-col
         class="primary lighten-2 py-4 text-center white--text"
@@ -31,8 +33,8 @@
   export default {
     data: () => ({
       links: [
-        'Blog',
-        'Github',
+        {'name': 'Blog', 'link': 'https://blog.ning.dev'},
+        {'name': 'Github', 'link': 'https://github.com/lndj/share-tesla-key-frontend'}
       ],
     }),
   }

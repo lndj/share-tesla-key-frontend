@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="openStatus" width="500">
+  <v-dialog v-model="openStatus" width="500" @click:outside="doClose" @keydown="doClose">
     <v-card>
       <v-card-title class="headline grey lighten-2"> 用户协议 </v-card-title>
       <v-card-text>
